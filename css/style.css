@@ -1,5 +1,6 @@
 @import url(reset.css);
 /* reset css import */
+@import url(../fontawesome/fontawesome/css/all.css);
 @font-face {
   font-family: "Urbanist";
   font-weight: normal;
@@ -102,6 +103,28 @@ nav > .nav-icon > img {
   margin: 1rem 2rem;
 }
 /* about page styling */
+.Portfolio-section {
+  padding: 2rem;
+  text-align: center;
+}
+/* what i do caruosel */
+.what-ido-caruosel {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+.what-ido-caruosel > div {
+  padding: 1rem;
+  border: 1px solid black;
+  transition: 0.5s;
+  text-align: left;
+}
+.what-ido-caruosel > div:hover {
+  padding: 1rem;
+  border: 1px solid black;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.103);
+}
+/* what i do caruosel */
 /* contact page styling */
 #contact-page {
   padding: 2rem;
@@ -135,6 +158,32 @@ textarea {
   padding: 1rem;
 }
 /* contact page styling */
+
+/*  */
+/*  */
+/* about-page-styling */
+#header {
+  display: flex;
+  align-items: center;
+  /* height: 100vh; */
+}
+header > .about-me {
+  padding: 2rem;
+}
+header > div {
+  width: 50%;
+}
+/* about-page-styling */
+.experience-section,
+.Journey-section,
+.goal-section {
+  padding: 2rem;
+  border-bottom: 2px solid black;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.103);
+}
+.experiences {
+  padding: 1rem 4rem;
+}
 /* footer section styling */
 footer {
   display: flex;
@@ -144,6 +193,7 @@ footer {
   bottom: 0;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.103);
+  z-index: 1;
 }
 
 /* footer section styling */
@@ -158,6 +208,7 @@ footer {
     justify-content: space-between;
     position: sticky;
     top: 0;
+    z-index: 10;
   }
   .mobile-hamburger {
     display: flex;
@@ -192,5 +243,34 @@ footer {
   /*  */
   #about-page {
     height: fit-content;
+  }
+  /* about-page-styling */
+  header {
+    display: flex;
+    flex-direction: column;
+
+    /* align-items: center; */
+    /* height: 100vh; */
+  }
+  header > .about-me {
+    padding: 1rem;
+  }
+  header > div {
+    width: 100%;
+  }
+  /* about-page-styling */
+  /* what i do caruosel */
+  .what-ido-caruosel {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+  .experience-section,
+  .Journey-section,
+  .goal-section {
+    padding: 2rem;
+    border-bottom: 2px solid black;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.103);
   }
 }
