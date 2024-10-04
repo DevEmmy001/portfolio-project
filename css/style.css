@@ -185,4 +185,8 @@ footer {
     padding: 0rem 2rem;
   }
   /* Hero-section styling */
+  /*  */
+  #about-page {
+    height: fit-content;
+  }
 }
