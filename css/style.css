@@ -1,0 +1,188 @@
+@import url(reset.css);
+/* reset css import */
+@font-face {
+  font-family: "Urbanist";
+  font-weight: normal;
+  src: url(../webfonts/Urbanist-Regular.woff2);
+}
+/* font face import */
+.uni-button {
+  background-color: black;
+  padding: 1rem 2rem;
+  color: white;
+  margin: 1rem 0rem;
+  width: fit-content;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.uni-button:hover {
+  background-color: white;
+  padding: 1rem 2rem;
+  color: black;
+  margin: 1rem 0rem;
+  border: 1px solid black;
+  width: fit-content;
+  cursor: pointer;
+}
+body {
+  font-family: "Urbanist";
+}
+/* navigatiion bar styling */
+nav {
+  display: flex;
+  padding: 0rem 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.103);
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+nav > .nav-icon > img {
+  width: 4rem;
+  /* border-radius: 100%; */
+}
+.navigation-links > ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  align-items: center;
+}
+.navigation-links > ul > a {
+  text-decoration: none;
+}
+.contact-button {
+  background-color: black;
+  padding: 1rem 2rem;
+  color: white;
+  transition: 0.5s;
+}
+.contact-button:hover {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem 2rem;
+  color: black;
+  border: 1px solid black;
+}
+.mobile-hamburger {
+  display: none;
+}
+
+/* navigatiion bar styling */
+/*  */
+/* Hero-section styling */
+.Hero-section {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.header-image-container {
+  width: 50%;
+}
+.Hero-section > .header-image-container > img {
+  width: 100%;
+}
+.header-intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem 3rem;
+}
+/* Hero-section styling */
+/* about page styling */
+#about-page {
+  padding: 2rem;
+  height: 100vh;
+}
+#about-page > p {
+  margin: 1rem 2rem;
+}
+/* about page styling */
+/* contact page styling */
+#contact-page {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+.input-form > input {
+  width: 20rem;
+  padding: 1rem;
+}
+.input-form > input:focus {
+  width: 20rem;
+  padding: 1rem;
+  border: 1px solid black;
+}
+.Message-height-adjustment {
+  height: 10rem;
+}
+.contact-intro {
+  text-align: center;
+  padding: 1rem 2rem;
+}
+textarea {
+  padding: 1rem;
+}
+/* contact page styling */
+/* footer section styling */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: sticky;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.103);
+}
+
+/* footer section styling */
+
+@media screen and (max-width: 700px) {
+  /* navigatiion bar styling */
+  nav {
+    display: flex;
+    padding: 1rem 1rem;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+  }
+  .mobile-hamburger {
+    display: flex;
+  }
+  .navigation-links-hamburger-menu {
+    display: flex;
+  }
+  .navigation-links-hamburger-menu > .navigation-links > ul {
+    display: none;
+    flex-direction: column;
+    padding: 0rem;
+  }
+  .mobile-hamburger > a > i {
+    font-size: 2rem;
+  }
+  /* navigatiion bar styling */
+  /*  */
+  /* Hero-section styling */
+  .Hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .header-image-container {
+    width: 100%;
+  }
+  .header-intro-text {
+    padding: 0rem 2rem;
+  }
+  /* Hero-section styling */
+}
