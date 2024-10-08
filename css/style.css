@@ -205,6 +205,13 @@ footer {
   display: flex;
   flex-direction: column;
 }
+.Portfolio-section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.Portfolio-section-grid > div {
+  width: 50%;
+}
 /* Portfolio-section styling */
 @media screen and (max-width: 700px) {
   /* navigatiion bar styling */
@@ -228,6 +235,7 @@ footer {
     display: none;
     flex-direction: column;
     padding: 0rem;
+    transition: 0.5s;
   }
   .mobile-hamburger > a > i {
     font-size: 2rem;
