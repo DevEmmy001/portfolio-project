@@ -230,12 +230,12 @@ footer {
   }
   .navigation-links-hamburger-menu {
     display: flex;
+    transition: 0.5s;
   }
   .navigation-links-hamburger-menu > .navigation-links > ul {
     display: none;
     flex-direction: column;
     padding: 0rem;
-    transition: 0.5s;
   }
   .mobile-hamburger > a > i {
     font-size: 2rem;
